@@ -1,0 +1,13 @@
+Source: ros-indigo-quadrotor-description
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-quadrotor-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The URDF file for a quadrotor.
+ Adapted from Daniel Mellinger, Nathan Michael, Vijay Kumar, &quot;Trajectory Generation and Control for Precise Aggressive Maneuvers with Quadrotors&quot;
