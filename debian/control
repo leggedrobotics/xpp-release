@@ -1,0 +1,12 @@
+Source: ros-indigo-biped-description
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-biped-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The URDF file for a biped comprised of two HyQ legs.
