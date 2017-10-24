@@ -1,0 +1,13 @@
+Source: ros-indigo-hyqb-description
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-hyqb-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: A minimal URDF file for HyQ from the Italian Institute of Technology (IIT) extracted from https://github.com/iit-DLSLab/hyq-description.
+ See also https://www.iit.it/research/lines/dynamic-legged-systems.
