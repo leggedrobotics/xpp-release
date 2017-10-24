@@ -1,0 +1,12 @@
+Source: ros-indigo-xpp-vis-hyq
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roscpp, ros-indigo-xpp-msgs, ros-indigo-xpp-ros-conversions, ros-indigo-xpp-states, ros-indigo-xpp-vis
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-xpp-vis-hyq
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-roscpp, ros-indigo-xpp-msgs, ros-indigo-xpp-ros-conversions, ros-indigo-xpp-states, ros-indigo-xpp-vis
+Description: HyQ-robot specific functions for visualization in the XPP Motion Framework.
