@@ -1,0 +1,12 @@
+Source: ros-indigo-xpp-vis
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-kdl-parser, ros-indigo-robot-state-publisher, ros-indigo-roscpp, ros-indigo-tf, ros-indigo-xpp-msgs, ros-indigo-xpp-ros-conversions, ros-indigo-xpp-states
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-xpp-vis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-kdl-parser, ros-indigo-robot-state-publisher, ros-indigo-roscpp, ros-indigo-tf, ros-indigo-xpp-msgs, ros-indigo-xpp-ros-conversions, ros-indigo-xpp-states
+Description: Visualization for the XPP Motion Framework.
