@@ -1,0 +1,12 @@
+Source: ros-indigo-xpp
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-xpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-xpp-examples, ros-indigo-xpp-hyq, ros-indigo-xpp-msgs, ros-indigo-xpp-quadrotor, ros-indigo-xpp-ros-conversions, ros-indigo-xpp-states, ros-indigo-xpp-vis
+Description: Meta-package for the Xpp framework.
