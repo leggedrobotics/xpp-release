@@ -9,11 +9,9 @@ set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rosbag
-  xpp_states
-  xpp_msgs
-  xpp_ros_conversions
   xpp_vis
-  xpp_vis_hyq
+  xpp_hyq
+  xpp_quadrotor
 )
 
 
@@ -48,7 +46,7 @@ target_link_libraries(monoped_publisher
   ${catkin_LIBRARIES}
 )
 
-add_executable(monoped_bag_builder src/monoped_bag_builder.cc)
-target_link_libraries(monoped_bag_builder
+add_executable(quadrotor_bag_builder src/quadrotor_bag_builder.cc)
+target_link_libraries(quadrotor_bag_builder
   ${catkin_LIBRARIES}
 )
