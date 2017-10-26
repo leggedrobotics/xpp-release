@@ -24,41 +24,44 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ******************************************************************************/
 
+#include <ros/ros.h>
 #include <rosbag/bag.h>
 
-#include <xpp_msgs/RobotStateCartesian.h>
-#include <xpp_msgs/topic_names.h>
+#include <xpp_msgs/RobotStateJoint.h>
 #include <xpp_ros_conversions/convert.h>
-#include <xpp_states/robot_state_cartesian.h>
+#include <xpp_states/state.h>
 
 
 using namespace xpp;
 
 int main(int argc, char *argv[])
 {
-  // creates a bag file wherever this executable is run from
+  // creates a bag file wherever executable is run (usually ~/.ros/)
   rosbag::Bag bag;
-  bag.open("mono_traj.bag", rosbag::bagmode::Write);
+  bag.open("quadrotor_traj.bag", rosbag::bagmode::Write);
 
-  // visualize the state of a one-legged hopper
-  RobotStateCartesian hopper(1);
+  // visualize the state of a drone (only has a base)
+  State3d base;
 
   // create a sequence of states for a total duration of T spaced 0.01s apart.
-  double T = 2.0;
+  double T = 2*M_PI;
   double dt = 0.01;
   double t = 1e-6;
   while (t < T)
   {
     // base and foot follow half a sine motion up and down
-    hopper.base_.lin.p_.z() = 0.7 - 0.05*sin(2*M_PI/(2*T)*t);  //[m]
-    hopper.ee_motion_.at(0).p_.z() = 0.1*sin(2*M_PI/(2*T)*t); // [m]
-    hopper.ee_forces_.at(0).z() = 100; // [N]
-    hopper.ee_contact_.at(0) = true;
+    base.lin.p_.z() = 0.7 - 0.5*sin(t);  //[m]
+    base.lin.p_.x() = 1.0/T*t;           //[m]
+
+    double roll = 30./180*M_PI*sin(t);
+    base.ang.q = GetQuaternionFromEulerZYX(0.0, 0.0, roll);
 
     // save the state message with current time in the bag
     auto timestamp = ::ros::Time(t);
-    auto msg = Convert::ToRos(hopper);
-    bag.write(xpp_msgs::robot_state_desired, timestamp, msg);
+
+    xpp_msgs::RobotStateJoint msg;
+    msg.base = Convert::ToRos(base);
+    bag.write("xpp/joint_des", timestamp, msg);
 
     t += dt;
   }
