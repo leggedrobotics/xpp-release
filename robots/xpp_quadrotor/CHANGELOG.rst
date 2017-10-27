@@ -2,6 +2,9 @@
 Changelog for package quadrotor_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2017-10-27)
+------------------
+
 1.0.0 (2017-10-26)
 ------------------
 * Added license to files and giving credit to contributors.
