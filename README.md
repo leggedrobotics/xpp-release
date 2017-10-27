@@ -1,3 +1,34 @@
+## xpp (jade) - 1.0.1-0
+
+The packages in the `xpp` repository were released into the `jade` distro by running `/usr/bin/bloom-release xpp --track jade --rosdistro jade --new-track` on `Fri, 27 Oct 2017 11:16:47 -0000`
+
+These packages were released:
+- `xpp`
+- `xpp_examples`
+- `xpp_hyq`
+- `xpp_msgs`
+- `xpp_quadrotor`
+- `xpp_ros_conversions`
+- `xpp_states`
+- `xpp_vis`
+
+Version of package(s) in repository `xpp`:
+
+- upstream repository: https://github.com/leggedrobotics/xpp.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.8`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## xpp (indigo) - 1.0.1-1
 
 The packages in the `xpp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release xpp --track indigo --rosdistro indigo` on `Fri, 27 Oct 2017 08:52:06 -0000`
