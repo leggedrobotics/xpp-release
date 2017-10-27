@@ -1,0 +1,13 @@
+Source: ros-kinetic-xpp
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-xpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-xpp-examples, ros-kinetic-xpp-hyq, ros-kinetic-xpp-msgs, ros-kinetic-xpp-quadrotor, ros-kinetic-xpp-ros-conversions, ros-kinetic-xpp-states, ros-kinetic-xpp-vis
+Description: Xpp is a package for the visualization of motion plans for floating-base robots.
+ Apart from drawing support areas, contact forces and motion trajectories in RVIZ, it also displays these plans for specific robots. Current robots include a one-legged, a two-legged hopper, HyQ and a quadrotor.
