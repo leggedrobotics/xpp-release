@@ -1,0 +1,12 @@
+Source: ros-lunar-xpp-vis
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-kdl-parser, ros-lunar-robot-state-publisher, ros-lunar-roscpp, ros-lunar-tf, ros-lunar-visualization-msgs, ros-lunar-xpp-ros-conversions
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-lunar-xpp-vis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-kdl-parser, ros-lunar-robot-state-publisher, ros-lunar-roscpp, ros-lunar-tf, ros-lunar-visualization-msgs, ros-lunar-xpp-ros-conversions
+Description: Visualization for the XPP Motion Framework.
