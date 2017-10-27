@@ -2,6 +2,9 @@
 Changelog for package xpp_ros_conversions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2017-10-27)
+------------------
+
 1.0.0 (2017-10-26)
 ------------------
 * included install space in CMakeLists.txt
