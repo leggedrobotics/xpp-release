@@ -2,6 +2,11 @@
 Changelog for package xpp_vis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2017-10-27)
+------------------
+* xpp_vis: add visualization_msg dependency
+* Contributors: Alexander Winkler
+
 1.0.0 (2017-10-26)
 ------------------
 * removed robot specific bag files from xpp_msgs
