@@ -1,0 +1,34 @@
+ros-lunar-xpp-states (1.0.2-0stretch) stretch; urgency=high
+
+  * Merge pull request #1 <https://github.com/leggedrobotics/xpp/issues/1> from mikaelarguedas/missing_includes
+    add missing std includes
+  * add missing std includes
+  * Contributors: Alexander W Winkler, Mikael Arguedas
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Fri, 27 Oct 2017 22:00:00 -0000
+
+ros-lunar-xpp-states (1.0.1-0stretch) stretch; urgency=high
+
+
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Thu, 26 Oct 2017 22:00:00 -0000
+
+ros-lunar-xpp-states (1.0.0-0stretch) stretch; urgency=high
+
+  * removed robot specific bag files from xpp_msgs
+  * included install space in CMakeLists.txt
+  * changed catkin pkg dependencies to roscpp
+  * formatting
+  * Added license to files and giving credit to contributors.
+  * removed some unneccessary dependencies.
+  * cleaned up package.xml and CMakeLists.txt files
+  * cleaned up endeffector and joint representation
+  * showed close connection of mono/bi/quad to hyq
+  * made xpp_vis robot independent. Added sample hopper executables
+  * removed biped and quadruped joint identifier
+  * added xpp_states
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Wed, 25 Oct 2017 22:00:00 -0000
+
+
