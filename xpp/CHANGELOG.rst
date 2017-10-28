@@ -2,6 +2,9 @@
 Changelog for package xpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.2 (2017-10-28)
+------------------
+
 1.0.1 (2017-10-27)
 ------------------
 * xpp_vis: add visualization_msg dependency
