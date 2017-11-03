@@ -2,9 +2,12 @@
 
 <package format="2">
   <name>xpp_states</name>
-  <version>1.0.1</version>
+  <version>1.0.3</version>
   <description>
-    Common state definitions used in the XPP Motion Framework.
+    Common definitions (positions, velocities, angular angles,
+    angular rates) and robot definitions in Cartesian and joint state
+    used in the Xpp Motion Framework, as well as conversions to/from
+    xpp_msgs.
   </description>
   
   <author     email="winklera@ethz.ch">Alexander W. Winkler</author>
