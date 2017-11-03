@@ -1,0 +1,12 @@
+Source: ros-kinetic-xpp-vis
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-kdl-parser, ros-kinetic-robot-state-publisher, ros-kinetic-roscpp, ros-kinetic-tf, ros-kinetic-visualization-msgs, ros-kinetic-xpp-msgs, ros-kinetic-xpp-states
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-xpp-vis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-kdl-parser, ros-kinetic-robot-state-publisher, ros-kinetic-roscpp, ros-kinetic-tf, ros-kinetic-visualization-msgs, ros-kinetic-xpp-msgs, ros-kinetic-xpp-states
+Description: Visualization for the XPP Motion Framework.
