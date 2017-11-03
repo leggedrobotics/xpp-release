@@ -2,7 +2,7 @@
 
 <package format="2">
   <name>xpp_vis</name>
-  <version>1.0.1</version>
+  <version>1.0.3</version>
   <description>
     Visualization for the XPP Motion Framework.
   </description>
@@ -22,5 +22,6 @@
   <depend>robot_state_publisher</depend>
   <depend>visualization_msgs</depend>
 
-  <depend>xpp_ros_conversions</depend>
+  <depend>xpp_states</depend>
+  <depend>xpp_msgs</depend>
 </package>
