@@ -1,0 +1,13 @@
+Source: ros-lunar-xpp-hyq
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-roscpp, ros-lunar-xpp-vis
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-lunar-xpp-hyq
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-roscpp, ros-lunar-xpp-vis
+Description: HyQ-robot specific functions for visualization in the XPP Motion Framework.
+ These include inverse kinematics as well as urdf files for a one-legged, two-legged and four legged robot with HyQ legs. The dynamic model can be found here. See also IIT.
