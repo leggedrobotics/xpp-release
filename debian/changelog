@@ -1,0 +1,41 @@
+ros-indigo-xpp-examples (1.0.4-0trusty) trusty; urgency=high
+
+  * Merge pull request #3 from leggedrobotics/devel
+    Fix xacro bug and remove terrain and optimization specific classes.
+  * renamed some launch files
+  * Contributors: Alexander W Winkler
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Tue, 02 Jan 2018 23:00:00 -0000
+
+ros-indigo-xpp-examples (1.0.3-0trusty) trusty; urgency=high
+
+  * removed xpp_ros_conversions (now in xpp_states)
+  * xpp_examples: removed installation of examples lib
+  * xpp_examples: Install bags and launch files
+  * 1.0.2
+  * update changelog
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Thu, 02 Nov 2017 23:00:00 -0000
+
+ros-indigo-xpp-examples (1.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Fri, 27 Oct 2017 22:00:00 -0000
+
+ros-indigo-xpp-examples (1.0.1-0trusty) trusty; urgency=high
+
+
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Thu, 26 Oct 2017 22:00:00 -0000
+
+ros-indigo-xpp-examples (1.0.0-0trusty) trusty; urgency=high
+
+  * added example bag files (150MB)
+  * added separate xpp_example package and Readme.md
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <winklera@ethz.ch>  Wed, 25 Oct 2017 22:00:00 -0000
+
+
