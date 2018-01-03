@@ -1,3 +1,33 @@
+## xpp (lunar) - 1.0.4-0
+
+The packages in the `xpp` repository were released into the `lunar` distro by running `/usr/bin/bloom-release xpp --track lunar --rosdistro lunar` on `Wed, 03 Jan 2018 12:18:51 -0000`
+
+These packages were released:
+- `xpp`
+- `xpp_examples`
+- `xpp_hyq`
+- `xpp_msgs`
+- `xpp_quadrotor`
+- `xpp_states`
+- `xpp_vis`
+
+Version of package(s) in repository `xpp`:
+
+- upstream repository: https://github.com/leggedrobotics/xpp.git
+- release repository: https://github.com/leggedrobotics/xpp-release.git
+- rosdistro version: `1.0.3-0`
+- old version: `1.0.3-0`
+- new version: `1.0.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.8`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## xpp (kinetic) - 1.0.4-0
 
 The packages in the `xpp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release xpp --track kinetic --rosdistro kinetic` on `Wed, 03 Jan 2018 12:12:16 -0000`
