@@ -1,0 +1,12 @@
+Source: ros-indigo-xpp-examples
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-rosbag, ros-indigo-roscpp, ros-indigo-xpp-hyq, ros-indigo-xpp-quadrotor, ros-indigo-xpp-vis
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-xpp-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-rosbag, ros-indigo-roscpp, ros-indigo-xpp-hyq, ros-indigo-xpp-quadrotor, ros-indigo-xpp-vis
+Description: Examples of how to use the xpp framework.
