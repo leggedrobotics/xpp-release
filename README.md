@@ -1,6 +1,6 @@
 ### <img src="https://i.imgur.com/ct8e7T4.png" height="80" />
 
-[![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=github_leggedrobotics/xpp/master)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/xpp/job/master/) [![DOI](https://zenodo.org/badge/108095932.svg)](https://zenodo.org/badge/latestdoi/108095932)
+[![Build Status](http://build.ros.org/buildStatus/icon?job=Lsrc_uX__xpp__ubuntu_xenial__source)](http://build.ros.org/view/Lsrc_uX/job/Lsrc_uX__xpp__ubuntu_xenial__source/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1037901.svg)](https://doi.org/10.5281/zenodo.1037901)
 
 | ![](https://i.imgur.com/NkL8Haw.gif) | ![](https://i.imgur.com/RrEc2Cd.gif) 
 |:-------------------------:|:-------------------------:|
@@ -10,7 +10,7 @@ Xpp is a collection of ROS-packages (http://wiki.ros.org/xpp) for the visualizat
 
 **Author/Maintainer: [Alexander W. Winkler](https://awinkler.github.io/)** 
 
-This code was developed at the [Agile and Dexterous Robotics Lab](http://www.adrl.ethz.ch/doku.php), ETH Zurich. It is currently maintained by the [Robotics Systems Lab](http://www.rsl.ethz.ch/), ETH Zurich. See the [list of contributors](AUTHORS.txt) for further contributors.
+This code was mostly developed at the [Agile and Dexterous Robotics Lab](http://www.adrl.ethz.ch/doku.php), ETH Zurich. It is currently maintained by the [Robotics Systems Lab](http://www.rsl.ethz.ch/), ETH Zurich. See the [list of contributors](AUTHORS.md) for further contributors.
 
  [<img src="https://i.imgur.com/uCvLs2j.png" height="60" />](http://www.adrl.ethz.ch/doku.php)  &nbsp; &nbsp; &nbsp; &nbsp;    [<img src="https://i.imgur.com/aGOnNTZ.png" height="50" />](https://www.ethz.ch/en.html)
 
@@ -53,18 +53,22 @@ or if you are using [catkin tools].
 
 A few examples for different robots are provided in the `xpp_examples` package. For starters, run
 
-    roslaunch xpp_examples hyq_ex.launch  // or monoped_ex_bag.launch, biped_ex.launch, quadrotor_ex.launch
+    roslaunch xpp_examples hyq_bag.launch  // or any other launch file in this package
 
 These scripts actually executes the following steps:
 
-1. Start the visualization nodes, launch rviz with the correct config and wait for robot messages using `roslaunch xpp_vis xpp_vis.launch`.
+1. Start the visualization nodes, launch rviz with the correct config and wait for robot messages using `roslaunch xpp_vis xpp.launch`.
  
-2. Now robot messages of type `xpp_msgs/RobotStateCartesian.msg` can be sent and visualized. Since we also want to display the URDF of a specific robot, the URDF file of the robot (e.g `monoped_description)/urdf/monoped.urdf` must be uploaded to the ROS parameter server.
+2. Now robot messages of type `xpp_msgs/RobotStateCartesian.msg` can be sent and visualized. Since we also want to display the URDF of a specific robot, the URDF file of the robot (e.g `xpp_hyq/urdf/monoped.urdf` must be uploaded to the ROS parameter server.
   
 3. Next a node must be created that transforms `xpp_msgs/RobotStateJoints.msg` into rviz TFs. If we also want to display Cartesian messages `xpp_msgs/RobotStateCartesian.msg`, Inverse Kinematics are neccessary for the specific robots.
  
-4. Finally, motions plans must be published for the specific robots. Rosbags of sample motions plans can be found at `xpp_examples/bags/` and can be run using `rosbag play`. To see some examples of how to generate these
-bag files or messages, check out `xpp_examples/src/monoped_bag_builder.cc` and `xpp_examples/src/monoped_publisher.cc`.
+4. Finally, motions plans must be published for the specific robots. Rosbags of sample motions plans can be found at `xpp_examples/bags/` and can be run using `rosbag play [bagname]`. To see some examples of how to generate these bag files or messages, check out `xpp_examples/src/monoped_bag_builder.cc` and `xpp_examples/src/monoped_publisher.cc`. For a more sophisticated way we used to generate these bags files , see [towr].
+
+
+## <img align="center" height="20" src="https://i.imgur.com/dHQx91Q.png"/> Citation
+
+If you use this work in an academic context, please cite the currently released version <a href="https://doi.org/10.5281/zenodo.1135005"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1135005.svg" alt="DOI" align="center"></a> as shown [here](https://zenodo.org/record/1135005/export/hx#.Wk3szDCGPmF).
 
 
 ##  <img align="center" height="20" src="https://i.imgur.com/H4NwgMg.png"/> Bugs & Feature Requests
@@ -73,6 +77,7 @@ Please report bugs and request features using the [Issue Tracker](https://github
 
 [HyQ]: https://www.iit.it/research/lines/dynamic-legged-systems
 [ROS]: http://www.ros.org
+[towr]: http://wiki.ros.org/towr
 [rviz]: http://wiki.ros.org/rviz
 [catkin tools]: http://catkin-tools.readthedocs.org/
 [Eigen]: http://eigen.tuxfamily.org
