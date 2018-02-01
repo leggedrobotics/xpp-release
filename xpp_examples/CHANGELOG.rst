@@ -2,6 +2,12 @@
 Changelog for package xpp_examples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.5 (2018-02-01)
+------------------
+* add new example bags generated with towr
+* update launch scripts
+* Contributors: Alexander Winkler
+
 1.0.4 (2018-01-03)
 ------------------
 * Merge pull request #3 from leggedrobotics/devel
