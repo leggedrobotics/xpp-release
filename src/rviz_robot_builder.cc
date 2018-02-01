@@ -1,27 +1,30 @@
 /******************************************************************************
-Copyright (c) 2017, Alexander W. Winkler, ETH Zurich. All rights reserved.
+Copyright (c) 2017, Alexander W. Winkler. All rights reserved.
 
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-    * Redistributions of source code must retain the above copyright notice,
-      this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright notice,
-      this list of conditions and the following disclaimer in the documentation
-      and/or other materials provided with the distribution.
-    * Neither the name of ETH ZURICH nor the names of its contributors may be
-      used to endorse or promote products derived from this software without
-      specific prior written permission.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL ETH ZURICH BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
-OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ******************************************************************************/
 
 #include <xpp_vis/rviz_robot_builder.h>
@@ -86,23 +89,13 @@ RvizRobotBuilder::BuildRobotState (const xpp_msgs::RobotStateCartesian& state_ms
   }
 
 
+  // don't overwrite earlier IDs filled by terrain markers
   static const int state_ids_start_ = 10;
-  static const int trajectory_ids_start_ = 70;
-  static int unique_id; // in case marker should remain forever
+  int id = state_ids_start_;
 
-  if (state.t_global_ < 0.01) // first state in trajectory
-    unique_id = trajectory_ids_start_;
-
-  int id = state_ids_start_; // earlier IDs filled by terrain
   for (Marker& m : msg.markers) {
     m.header.frame_id = frame_id_;
-
-    // use unique ID that doesn't get overwritten in next state.
-    if (m.lifetime == ::ros::DURATION_MAX)
-      m.id = unique_id++;
-    else
-      m.id = id;
-
+    m.id = id;
     id++;
   }
 
@@ -118,10 +111,7 @@ RvizRobotBuilder::CreateEEPositions (const EEPos& ee_pos,
   for (auto ee : ee_pos.GetEEsOrdered()) {
     Marker m = CreateSphere(ee_pos.at(ee), 0.04);
     m.ns     = "endeffector_pos";
-    m.color  = color.blue;//GetLegColor(ee);
-
-//    if (in_contact.at(ee))
-//      m.lifetime = ::ros::DURATION_MAX; // keep showing footholds
+    m.color  = color.blue;
 
     vec.push_back(m);
   }
@@ -214,6 +204,7 @@ RvizRobotBuilder::CreateCopPos (const EEForces& ee_forces,
   for (Vector3d ee : ee_forces.ToImpl())
     z_sum += ee.z();
 
+  Marker m;
   // only then can the Center of Pressure be calculated
   Vector3d cop = Vector3d::Zero();
   if (z_sum > 0.0) {
@@ -221,9 +212,11 @@ RvizRobotBuilder::CreateCopPos (const EEForces& ee_forces,
       double p = ee_forces.at(ee).z()/z_sum;
       cop += p*ee_pos.at(ee);
     }
+    m = CreateSphere(cop);
+  } else {
+    m = CreateSphere(cop, 0.001); // no CoP exists b/c flight phase
   }
 
-  Marker m = CreateSphere(cop);
   m.color = color.red;
   m.ns = "cop";
 
