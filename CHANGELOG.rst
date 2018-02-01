@@ -2,6 +2,13 @@
 Changelog for package quadrotor_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.5 (2018-02-01)
+------------------
+* update launch scripts
+* modernize CMake files
+* use default BSD license
+* Contributors: Alexander Winkler
+
 1.0.4 (2018-01-03)
 ------------------
 
