@@ -1,3 +1,33 @@
+## xpp (kinetic) - 1.0.6-0
+
+The packages in the `xpp` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release xpp --track kinetic --rosdistro kinetic` on `Wed, 18 Apr 2018 13:30:06 -0000`
+
+These packages were released:
+- `xpp`
+- `xpp_examples`
+- `xpp_hyq`
+- `xpp_msgs`
+- `xpp_quadrotor`
+- `xpp_states`
+- `xpp_vis`
+
+Version of package(s) in repository `xpp`:
+
+- upstream repository: https://github.com/leggedrobotics/xpp.git
+- release repository: https://github.com/leggedrobotics/xpp-release.git
+- rosdistro version: `1.0.5-0`
+- old version: `1.0.5-0`
+- new version: `1.0.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.40`
+
+
 ## xpp (indigo) - 1.0.6-0
 
 The packages in the `xpp` repository were released into the `indigo` distro by running `/usr/bin/bloom-release xpp --track indigo --rosdistro indigo` on `Wed, 18 Apr 2018 12:55:55 -0000`
