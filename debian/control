@@ -1,0 +1,12 @@
+Source: ros-kinetic-xpp-examples
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-rosbag, ros-kinetic-roscpp, ros-kinetic-xpp-hyq, ros-kinetic-xpp-quadrotor, ros-kinetic-xpp-vis
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-xpp-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-rosbag, ros-kinetic-roscpp, ros-kinetic-xpp-hyq, ros-kinetic-xpp-quadrotor, ros-kinetic-xpp-vis
+Description: Examples of how to use the xpp framework.
