@@ -2,6 +2,11 @@
 Changelog for package xpp_vis_hyq
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.7 (2018-07-03)
+------------------
+* add rviz launch specifically for hyq
+* Contributors: Alexander Winkler
+
 1.0.6 (2018-04-18)
 ------------------
 * add missing libxpp_hyq.so library to catkin install
