@@ -5,6 +5,9 @@ Changelog for package quadrotor_description
 1.0.6 (2018-04-18)
 ------------------
 
+1.0.8 (2018-07-07)
+------------------
+
 1.0.7 (2018-07-03)
 ------------------
 * modified default rviz launch scripts
