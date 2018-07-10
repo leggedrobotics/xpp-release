@@ -2,6 +2,19 @@
 Changelog for package xpp_states
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.9 (2018-07-10)
+------------------
+
+1.0.8 (2018-07-07)
+------------------
+* avoid IK segfault for biped/hyq when not enough ee positions sent
+* Contributors: Alexander Winkler
+
+1.0.7 (2018-07-03)
+------------------
+* add names to biped and quadruped ids
+* Contributors: Alexander Winkler
+
 1.0.6 (2018-04-18)
 ------------------
 
