@@ -5,6 +5,23 @@ Changelog for package quadrotor_description
 1.0.6 (2018-04-18)
 ------------------
 
+1.0.9 (2018-07-10)
+------------------
+* Merge pull request #7 from zlingkang/xacropi2xacro
+  change deprecated xacro.py to xacro
+* Contributors: zlingkang
+
+1.0.8 (2018-07-07)
+------------------
+
+1.0.7 (2018-07-03)
+------------------
+* modified default rviz launch scripts
+* Merge branch 'master' of github.com:leggedrobotics/xpp
+* 1.0.6
+* update changelogs
+* Contributors: Alexander Winkler
+
 1.0.5 (2018-02-01)
 ------------------
 * update launch scripts
