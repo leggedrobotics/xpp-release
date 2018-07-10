@@ -1,3 +1,33 @@
+## xpp (melodic) - 1.0.9-0
+
+The packages in the `xpp` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic xpp` on `Tue, 10 Jul 2018 18:41:08 -0000`
+
+These packages were released:
+- `xpp`
+- `xpp_examples`
+- `xpp_hyq`
+- `xpp_msgs`
+- `xpp_quadrotor`
+- `xpp_states`
+- `xpp_vis`
+
+Version of package(s) in repository `xpp`:
+
+- upstream repository: https://github.com/leggedrobotics/xpp.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.9-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.40`
+
+
 ## xpp (lunar) - 1.0.9-0
 
 The packages in the `xpp` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --rosdistro lunar --track lunar xpp` on `Tue, 10 Jul 2018 18:29:51 -0000`
