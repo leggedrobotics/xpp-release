@@ -1,0 +1,12 @@
+Source: ros-indigo-xpp-ros-conversions
+Section: misc
+Priority: extra
+Maintainer: Alexander W. Winkler <winklera@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-xpp-msgs, ros-indigo-xpp-states
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-xpp-ros-conversions
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-xpp-msgs, ros-indigo-xpp-states
+Description: Conversions between ROS messages and the XPP Motion Framework.
