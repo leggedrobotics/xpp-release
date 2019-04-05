@@ -2,6 +2,11 @@
 Changelog for package xpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.10 (2019-04-05)
+-------------------
+* Improve docs (`#8 <https://github.com/leggedrobotics/xpp/issues/8>`_)
+* Contributors: Alexander Winkler
+
 1.0.9 (2018-07-10)
 ------------------
 
