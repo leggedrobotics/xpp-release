@@ -1,0 +1,12 @@
+Source: ros-noetic-xpp-vis
+Section: misc
+Priority: optional
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-kdl-parser, ros-noetic-robot-state-publisher, ros-noetic-roscpp, ros-noetic-rosunit, ros-noetic-tf, ros-noetic-visualization-msgs, ros-noetic-xpp-msgs, ros-noetic-xpp-states
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-noetic-xpp-vis
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-kdl-parser, ros-noetic-robot-state-publisher, ros-noetic-roscpp, ros-noetic-tf, ros-noetic-visualization-msgs, ros-noetic-xpp-msgs, ros-noetic-xpp-states
+Description: Visualization for the XPP Motion Framework.
