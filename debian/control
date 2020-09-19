@@ -1,0 +1,12 @@
+Source: ros-noetic-xpp-msgs
+Section: misc
+Priority: optional
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-geometry-msgs, ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-sensor-msgs, ros-noetic-std-msgs
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-noetic-xpp-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-geometry-msgs, ros-noetic-message-generation, ros-noetic-message-runtime, ros-noetic-sensor-msgs, ros-noetic-std-msgs
+Description: ROS messages used in the XPP framework.
