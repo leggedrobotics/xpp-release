@@ -1,0 +1,12 @@
+Source: ros-noetic-xpp-examples
+Section: misc
+Priority: optional
+Maintainer: Alexander W. Winkler <alexander.w.winkler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-rosbag, ros-noetic-roscpp, ros-noetic-xpp-hyq, ros-noetic-xpp-quadrotor, ros-noetic-xpp-vis
+Homepage: http://github.com/leggedrobotics/xpp
+Standards-Version: 3.9.2
+
+Package: ros-noetic-xpp-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-rosbag, ros-noetic-roscpp, ros-noetic-xpp-hyq, ros-noetic-xpp-quadrotor, ros-noetic-xpp-vis
+Description: Examples of how to use the xpp framework.

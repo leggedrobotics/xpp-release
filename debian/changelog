@@ -1,0 +1,82 @@
+ros-noetic-xpp-examples (1.0.10-1buster) buster; urgency=high
+
+  * Update README.txt
+  * Improve docs (#8 <https://github.com/leggedrobotics/xpp/issues/8>)
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 05 Apr 2019 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.9-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Tue, 10 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.8-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Sat, 07 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.7-1buster) buster; urgency=high
+
+  * only show urdfs from current examples in rviz
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Tue, 03 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.6-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Wed, 18 Apr 2018 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.5-1buster) buster; urgency=high
+
+  * add new example bags generated with towr
+  * update launch scripts
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Thu, 01 Feb 2018 08:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.4-1buster) buster; urgency=high
+
+  * Merge pull request #3 from leggedrobotics/devel
+    Fix xacro bug and remove terrain and optimization specific classes.
+  * renamed some launch files
+  * Contributors: Alexander W Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Wed, 03 Jan 2018 08:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.3-1buster) buster; urgency=high
+
+  * removed xpp_ros_conversions (now in xpp_states)
+  * xpp_examples: removed installation of examples lib
+  * xpp_examples: Install bags and launch files
+  * 1.0.2
+  * update changelog
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 03 Nov 2017 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.2-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Sat, 28 Oct 2017 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.1-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 27 Oct 2017 07:00:00 -0000
+
+ros-noetic-xpp-examples (1.0.0-1buster) buster; urgency=high
+
+  * added example bag files (150MB)
+  * added separate xpp_example package and Readme.md
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Thu, 26 Oct 2017 07:00:00 -0000
+
+
