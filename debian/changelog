@@ -1,0 +1,89 @@
+ros-noetic-xpp-msgs (1.0.10-1buster) buster; urgency=high
+
+  * Improve docs (#8 <https://github.com/leggedrobotics/xpp/issues/8>)
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 05 Apr 2019 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.9-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Tue, 10 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.8-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Sat, 07 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.7-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Tue, 03 Jul 2018 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.6-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Wed, 18 Apr 2018 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.5-1buster) buster; urgency=high
+
+  * modernize CMake files
+  * use default BSD license
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Thu, 01 Feb 2018 08:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.4-1buster) buster; urgency=high
+
+  * Merge pull request #3 from leggedrobotics/devel
+    Fix xacro bug and remove terrain and optimization specific classes.
+  * removed optimization related topic names
+  * rename OptParameters.msg to more concise RobotParameters.msg
+  * removed UserCommand msg and terrain_builder class
+  * renamed some launch files
+  * Contributors: Alexander W Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Wed, 03 Jan 2018 08:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.3-1buster) buster; urgency=high
+
+  * 1.0.2
+  * update changelog
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 03 Nov 2017 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.2-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Sat, 28 Oct 2017 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.1-1buster) buster; urgency=high
+
+
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Fri, 27 Oct 2017 07:00:00 -0000
+
+ros-noetic-xpp-msgs (1.0.0-1buster) buster; urgency=high
+
+  * removed robot specific bag files from xpp_msgs
+  * added separate xpp_example package and Readme.md
+  * included install space in CMakeLists.txt
+  * changed catkin pkg dependencies to roscpp
+  * formatting
+  * Added license to files and giving credit to contributors.
+  * cleaned up package.xml and CMakeLists.txt files
+  * removed biped and quadruped joint identifier
+  * Merge remote-tracking branch 'xpp_msgs/master'
+    Conflicts:
+    .gitignore
+  * Contributors: Alexander Winkler
+
+ -- Alexander W. Winkler <alexander.w.winkler@gmail.com>  Thu, 26 Oct 2017 07:00:00 -0000
+
+
