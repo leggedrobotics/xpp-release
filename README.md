@@ -1,3 +1,33 @@
+## xpp (noetic) - 1.0.10-1
+
+The packages in the `xpp` repository were released into the `noetic` distro by running `/usr/bin/bloom-release xpp --track noetic --rosdistro noetic --new-track` on `Sat, 19 Sep 2020 04:33:59 -0000`
+
+These packages were released:
+- `xpp`
+- `xpp_examples`
+- `xpp_hyq`
+- `xpp_msgs`
+- `xpp_quadrotor`
+- `xpp_states`
+- `xpp_vis`
+
+Version of package(s) in repository `xpp`:
+
+- upstream repository: https://github.com/leggedrobotics/xpp.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.10-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## xpp (melodic) - 1.0.10-0
 
 The packages in the `xpp` repository were released into the `melodic` distro by running `/usr/bin/bloom-release xpp --rosdistro melodic` on `Fri, 05 Apr 2019 07:33:43 -0000`
